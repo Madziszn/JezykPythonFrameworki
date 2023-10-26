@@ -1,0 +1,72 @@
+/* styles.css - global styles */
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(45deg, #FFB6C1, #FFD700, #ADFF2F);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cRed {
+    color: #FF4500;
+    animation: pulse 1s infinite;
+}
+
+.alert {
+    margin-bottom: 30px;
+    border: 3px dashed #000;
+}
+
+pre {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+}
+
+/* Animations */
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* End of global styles */
+
+/* crud_blog_web.css - application-specific styles */
+
+.cbw-cGreen {
+    color: #7FFF00;
+    border-bottom: 5px dotted #8B0000;
+}
+
+img {
+    filter: invert(1);
+    transition: transform 0.3s;
+    border: 5px solid #FF69B4;
+    border-radius: 50%;
+}
+
+img:hover {
+    transform: rotate(360deg);
+}
+
+/* End of application-specific styles */
+
