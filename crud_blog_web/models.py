@@ -1,3 +1,2 @@
-from django.db import models
-
-# Create your models here.
+from .models.article import Article
+from .models.navigate import Navigate
